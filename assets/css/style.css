@@ -1,0 +1,36 @@
+@font-face{
+    font-family: "BYekan";
+    src: url("../fonts/yekan/BYekan-webfont.eot") format("eot"),
+        url("../fonts/yekan/BYekan-webfont.woff") format("woff"),
+        url("../fonts/yekan/BYekan-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: url(/assets/images/body_back4.jpg) repeat;
+}
+
+*{
+    font-family: "BYekan";
+    direction: rtl;
+    text-align: right;
+}
+
+
+/* scrollbars ------------------ */
+::-webkit-scrollbar{
+    width: 5px !important;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
