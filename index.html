@@ -10,11 +10,228 @@
     <title>Document</title>
 </head>
 <body dir="rtl">
-    <h1>سلام بر همه دوستان</h1>
-    <h1>سلام بر همه دوستان</h1>
-    <h1>سلام بر همه دوستان</h1>
+    <!-- #region navbar  -->
+    <nav class="navbar fixed-top navbar-dark bg-secondary top_navbar py-0">
+        <div class="container-fluid h-100 pe-0">
+
+            <div class="right_content h-100 py-1 bg-dark">
+                <a class="navbar-brand h-100" href="/">
+                    <img src="/assets/images/logo.png" class="h-100">
+                </a>
+                <div class="form-check form-switch mx-4 d-none d-md-block">
+                    <input id="handle_toggle_sidemenu" class="form-check-input pointer" type="checkbox" id="flexSwitchCheckChecked">
+                </div>
+            </div>
+
+            <div class="left_content d-flex flex-row-reverse">
+                <i class="fas fa-grip-vertical fa-2x me-3 pointer" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                <ul class="dropdown-menu mini_menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="my-2"><a class="dropdown-item d-block text-center">قاسم بساکی</a></li>
+                    <li class="my-2 d-flex justify-content-center align-items-center px-2">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <a class="dropdown-item" href="#">داشبورد</a>
+                    </li>
+                    <li class="my-2 d-flex justify-content-center align-items-center px-2">
+                        <i class="fas fa-paper-plane"></i>
+                        <a class="dropdown-item" href="#">تیکت ها</a>
+                    </li>
+                    <li class="my-2 d-flex justify-content-center align-items-center px-2">
+                        <i class="fas fa-envelope"></i>
+                        <a class="dropdown-item" href="#">پیام ها</a>
+                    </li>
+                    <hr/>
+                    <li class="d-flex justify-content-center align-items-center px-2">
+                        <i class="fas fa-power-off"></i>
+                        <a class="dropdown-item" href="#">خروج</a>
+                    </li>
+                </ul>
+                <i class="far fa-bell fa-2x mx-3 pointer position-relative">
+                    <span class="alarm_count">4</span>
+                </i>
+                <i class="fas fa-search fa-2x mx-3 pointer"></i>
+            </div>
+
+        </div>
+    </nav>
+    <!-- #endregion  -->
+
+    <!-- #region sidebar start -->
+    <section id="sidebar_section">
+        <div class="mini_sidebar collapsedd bg-dark h-100">
+            <ul class="p-0 m-0">
+                <li class="pt-1 pb-2 d-flex flex-column avatar_li position-relative">
+                    <span class="avatar_box">
+                        <img class="w-100 rounded-circle" src="/assets/images/avatar/user2.jpg">
+                    </span>
+                    <div class="sidebar_avatar_name text-center hiddenable">قاسم بساکی</div>
+                </li>
+                <li class="py-2 text-start pe-4">
+                    <i class="ms-3 icon fas fa-check text-light"></i>
+                    <span class="hiddenable">داشبورد</span>
+                </li>
+                <li class="py-2 text-start pe-4">
+                    <i class="ms-3 icon fas fa-check text-light"></i>
+                    <span class="hiddenable">داشبورد</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- #endregion -->
+
+    <section id="content_section" class="bg-light py-2 px-3">
+        <!-- #region add product category section start -->
+        <div class="add_product_category">
+            <h4 class="text-center my-3">مدیریت دسته بندی محصولات</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                        <span class="input-group-text" >جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_product_category_modal">
+                        <i class="fas fa-plus text-light"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-info">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان</th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>دسته شماره فلان</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>دسته شماره فلان</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>دسته شماره فلان</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>دسته شماره فلان</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span class="text-danger" aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+
+        <!-- #endregion content -->
+    </section>
+
+    <!-- #region(collapsed) add product category modal  -->
+    <div class="modal fade" id="add_product_category_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h5 class="modal-title" id="exampleModalLabel">افزودن دسته محصولات</h5>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <select type="text" class="form-control">
+                                    <option value="1">بدون والد</option>
+                                    <option value="1">دسته شماره 1</option>
+                                </select>
+                                <span class="input-group-text w_6rem justify-content-center">دسته والد</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="عنوان دسته">
+                                <span class="input-group-text w_6rem justify-content-center">عنوان</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <textarea type="text" class="form-control" placeholder="توضیحات" rows="5"></textarea>
+                                <span class="input-group-text w_6rem justify-content-center">توضیحات</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="file" class="form-control" placeholder="تصویر">
+                                <span class="input-group-text w_6rem justify-content-center">تصویر</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="با - از هم جدا شوند">
+                                <span class="input-group-text w_6rem justify-content-center">تگ ها</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 row justify-content-center">
+                            <div class="form-check form-switch col-5 col-md-2">
+                                <input class="form-check-input pointer" type="checkbox" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label pointer" for="flexSwitchCheckDefault">وضعیت فعال</label>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--  #endregion  -->
     
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
+
 </body>
 </html>
