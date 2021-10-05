@@ -47,8 +47,37 @@ body{
     text-shadow: 0 0 3px black;
 }
 
+.hoverable{
+    transition: all 200ms ease;
+}
+.hoverable:hover{
+    box-shadow: 0 0 3px black;
+}
+
+.chips_elem{
+    background: #bde7db;
+    border-radius: 5rem;
+    padding: 0.2rem 0.5rem;
+    margin-left: 3px;
+    white-space: nowrap;
+}
+
+.chips_elem i{
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
 .pointer{
     cursor: pointer !important;
+}
+
+.font_08{
+    font-size: 0.8rem !important;
+}
+.no_border_style{
+    border-style: hidden !important;
 }
 
 .dir_ltr{
@@ -57,6 +86,23 @@ body{
 
 .w_6rem{
     width: 6rem !important;
+}
+
+.w_8rem{
+    width: 8rem !important;
+}
+.w_15{
+    width: 15% !important;
+}
+.w_70{
+    width: 70% !important;
+}
+
+.text_truncate{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 td , th {
@@ -221,6 +267,10 @@ td , th {
 }
 #content_section.with_sidebar{
     width: calc(100% - 250px);
+}
+
+.color_tag{
+    border: 1px solid black;
 }
 
 

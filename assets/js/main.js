@@ -10,5 +10,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById('content_section').classList.remove('with_sidebar')
         }
     })
-
+    
 });
+
+var tooltipEl = document.querySelectorAll('.has_tooltip')
+for (const item of tooltipEl) {
+    new bootstrap.Tooltip(item, {
+        boundary: document.body
+    })
+}
