@@ -254,7 +254,7 @@
         <!-- #endregion content -->
     
         <!-- #region(collapsed) cart section start  -->
-        <div class="add_product_category">
+        <div class="cart_section d-none">
             <h4 class="text-center my-3">مدیریت سبد خرید</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -292,6 +292,64 @@
                         <td>
                             <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش و جزئیات سبد" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#edit_cart_modal"></i>
                             <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف سبد" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+        <!-- #endregion -->
+    
+        <!-- #region(collapsed) order section start  -->
+        <div class="orders_section">
+            <h4 class="text-center my-3">مدیریت سفارشات</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از نام کاربر یا شماره سفارش را وارد کنید">
+                        <span class="input-group-text" >جستجو</span>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>آی دی مشتری</th>
+                        <th>نام مشتری</th>
+                        <th>وضعیت</th>
+                        <th>تاریخ پرداخت</th>
+                        <th>مبلغ پرداختی</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>50</td>
+                        <td>قاسم بساکی</td>
+                        <td>پرداخت شده</td>
+                        <td>1400/07/15</td>
+                        <td>100هزار تومان</td>
+                        <td>
+                            <i class="fas fa-shopping-cart text-info mx-1 hoverable_text pointer has_tooltip" title="  جزئیات سفارش" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#order_details_modal"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف سفارش" data-bs-toggle="tooltip" data-bs-placement="top"></i>
                         </td>
                     </tr>
                 </tbody>
@@ -749,6 +807,91 @@
                         </div>
                         <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
                             <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--  #endregion  -->
+    
+    <!-- #region(collapsed) order details modal  -->
+    <div class="modal fade" id="order_details_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">جزئیات سفارش</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row my-1 justify-content-center">
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="customer_list" value="قاسم بساکی" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" value="تاریخ پرداخت" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" value="مبلغ پرداختی" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" value="مبلغ تخفیف" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" value="کد تخفیف" disabled>
+                        </div>
+                        <div class="col-12"></div>
+                        <div class="col-12 col-md-10 my-1">
+                            <input type="text" class="form-control" list="product_list" value="آدرس کامل" disabled>
+                        </div>
+                        <div class="col-12"></div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" value="نوع ارسال" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" value="تلفن" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" value="ایمیل" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" value="شماره کارت" disabled>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input type="text" class="form-control" list="product_list" value="نام بانک" disabled>
+                        </div>
+
+                        <hr class="mt-3">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center w_15" >عدد</span>
+                                <input type="number" class="form-control text-center w_15" placeholder=""  value="50" disabled>
+                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                    محصول شماره 1
+                                    ( 100هزار تومان)
+                                    ( گارانتی فلان)
+                                    <i class="fas fa-circle mx-1" style="color: #000;"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-1" style="direction: ltr;">
+                                <span class="input-group-text justify-content-center w_15" >عدد</span>
+                                <input type="number" class="form-control text-center w_15" placeholder=""  value="5" disabled>
+                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                    محصول ویژه و مورد خاص شماره 2
+                                    ( 100هزار تومان)
+                                    ( گارانتی فلان)
+                                    <i class="fas fa-circle mx-1" style="color: rgb(236, 16, 16);"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
