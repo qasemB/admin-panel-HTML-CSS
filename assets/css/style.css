@@ -73,6 +73,14 @@ body{
     cursor: pointer !important;
 }
 
+.no_pointer{
+    cursor: default !important;
+}
+
+.no_hover{
+    background: unset !important;
+}
+
 .font_08{
     font-size: 0.8rem !important;
 }
@@ -96,6 +104,10 @@ body{
 }
 .w_70{
     width: 70% !important;
+}
+
+.no_wrap{
+    white-space: nowrap !important;
 }
 
 .text_truncate{
@@ -249,6 +261,21 @@ td , th {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#sidebar_section .sidebar_submenu_list{
+    background: rgb(33, 37, 41);
+    color: white;
+    position: absolute;
+    inset: 0px 0px auto auto;
+    margin: 0px;
+    transform: translate(-108px, 8px);
+    box-shadow: 0 0 5px white;
+}
+
+#sidebar_section .group_sidebar_title{
+    color: #3186e7 !important;
+    text-shadow: 0 0 12px #077171 !important;
 }
 
 /* sidebar end-------<<<<<<< */
