@@ -763,7 +763,7 @@
         <!-- #endregion content -->
 
         <!-- #region(collapsed) add permissions section start -->
-        <div class="add_product_category">
+        <div class="add_product_category d-none">
             <h4 class="text-center my-3">مدیریت مجوز ها</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -816,6 +816,147 @@
         </div>
 
         <!-- #endregion content -->
+    
+        <!-- #region(collapsed) manage comments section start -->
+        <div class="add_product_category d-none">
+        <h4 class="text-center my-3">مدیریت نظرات</h4>
+        <div class="row justify-content-between">
+            <div class="col-10 col-md-6 col-lg-4">
+                <div class="input-group mb-3" style="direction: ltr;">
+                    <input type="text" class="form-control" placeholder="قسمتی از نام یا نام خانوادگی یا نظر را وارد کنید">
+                    <span class="input-group-text" >جستجو</span>
+                </div>
+            </div>
+            <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_comment_modal">
+                    <i class="fas fa-plus text-light"></i>
+                </button>
+            </div>
+        </div>
+        <table class="table table-responsive text-center table-hover table-bordered">
+            <thead class="table-secondary">
+                <tr>
+                    <th>#</th>
+                    <th>نام و نام خانوادگی</th>
+                    <th>نوع نظر</th>
+                    <th>برای</th>
+                    <th>قسمتی از متن</th>
+                    <th>وضعیت</th>
+                    <th>تاریخ</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>قاسم بساکی</td>
+                    <td>نظر</td>
+                    <td>محصول فلان</td>
+                    <td>قسمتی از متن نظر برای این محصول مثلا 100 کارکتر</td>
+                    <td>
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center p-0 h-100">
+                            <label class="form-check-label pointer" for="flexSwitchCheckDefault">فعال</label>
+                            <input class="form-check-input pointer mx-3" type="checkbox" id="flexSwitchCheckDefault">
+                        </div> 
+                    </td>
+                    <td>1400/10/12</td>
+                    <td>
+                        <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف نظر" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+            <ul class="pagination dir_ltr">
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+            </ul>
+            </nav>
+    </div>
+
+    <!-- #endregion content -->
+
+        <!-- #region(collapsed) manage questions section start -->
+        <div class="add_product_category">
+        <h4 class="text-center my-3">مدیریت سوالات</h4>
+        <div class="row justify-content-between">
+            <div class="col-10 col-md-6 col-lg-4">
+                <div class="input-group mb-3" style="direction: ltr;">
+                    <input type="text" class="form-control" placeholder="قسمتی از نام یا نام خانوادگی یا سوال را وارد کنید">
+                    <span class="input-group-text" >جستجو</span>
+                </div>
+            </div>
+            <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_question_modal">
+                    <i class="fas fa-plus text-light"></i>
+                </button>
+            </div>
+        </div>
+        <table class="table table-responsive text-center table-hover table-bordered">
+            <thead class="table-secondary">
+                <tr>
+                    <th>#</th>
+                    <th>نام و نام خانوادگی</th>
+                    <th>نوع سوال</th>
+                    <th>دسته</th>
+                    <th>قسمتی از متن</th>
+                    <th>وضعیت</th>
+                    <th>تاریخ</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>قاسم بساکی</td>
+                    <td>پرسش</td>
+                    <td>محصولات</td>
+                    <td>قسمتی از متن سوال برای این محصول مثلا 100 کارکتر</td>
+                    <td>
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center p-0 h-100">
+                            <label class="form-check-label pointer" for="flexSwitchCheckDefault">فعال</label>
+                            <input class="form-check-input pointer mx-3" type="checkbox" id="flexSwitchCheckDefault">
+                        </div> 
+                    </td>
+                    <td>1400/10/12</td>
+                    <td>
+                        <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف سوال" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+            <ul class="pagination dir_ltr">
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+            </ul>
+            </nav>
+    </div>
+
+    <!-- #endregion content -->
+
     
     </section>
 
@@ -1835,6 +1976,108 @@
     </div>
     <!--  #endregion  -->    
 
+    <!-- #region(collapsed) add comment modal  -->
+    <div class="modal fade" id="add_comment_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن نظر برای محصول</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <textarea rows="5" class="form-control"></textarea>
+                                <span class="input-group-text w_8rem justify-content-center">متن نظر</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-2" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="قسمتی از نام محصول مورد نظر را وارد کنید" list="productList">
+                                <span class="input-group-text w_8rem justify-content-center">برای</span>
+                                <datalist id="productList">
+                                    <option value="محصول شماره 1">
+                                    <option value="محصول شماره 2">
+                                    <option value="محصول شماره 3">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--  #endregion  -->
+
+    <!-- #region(collapsed) add questions modal  -->
+    <div class="modal fade" id="add_question_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">افزودن سوال</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center p-0 h-100">
+                            <label class="form-check-label pointer" for="flexSwitchCheckDefault">سوال</label>
+                            <input class="form-check-input pointer mx-3" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label pointer" for="flexSwitchCheckDefault">پاسخ</label>
+                        </div> 
+                        <div class="col-12">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <textarea rows="5" class="form-control"></textarea>
+                                <span class="input-group-text w_8rem justify-content-center">متن سوال</span>
+                            </div>
+                        </div>
+                        <div class="input-group mb-3" style="direction: ltr;">
+                            <span class="input-group-text justify-content-center">
+                                <i class="fas fa-plus text-success hoverable_text pointer"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="قسمتی از نام گروه را وارد کنید" list="questionGroupList">
+                            <span class="input-group-text w_8rem justify-content-center">گروه</span>
+                            <datalist id="questionGroupList">
+                                <option value="گروه 1">
+                                <option value="گروه 2">
+                                <option value="گروه 3">
+                            </datalist>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group my-2" style="direction: ltr;">
+                                <input type="text" class="form-control" placeholder="آی دی سوال مورد نظر را وارد کنید" list="questionsList">
+                                <span class="input-group-text w_8rem justify-content-center">انتخاب سوال</span>
+                                <datalist id="questionsList">
+                                    <option value="سوال شماره 1">
+                                    <option value="سوال شماره 2">
+                                    <option value="سوال شماره 3">
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--  #endregion  -->
+
+        
 
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/main.js"></script>
