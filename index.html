@@ -65,7 +65,7 @@
                     </span>
                     <div class="sidebar_avatar_name text-center hiddenable">قاسم بساکی</div>
                 </li>
-                <li class="py-1 text-start pe-4 mt-2">
+                <li class="py-1 text-start pe-4 sidebar_menu_item mt-2 active" data-section-id="dashboard_section" >
                     <i class="ms-3 icon fas fa-tachometer-alt text-light"></i>
                     <span class="hiddenable no_wrap font_08">داشبورد</span>
                 </li>
@@ -73,27 +73,27 @@
                 <li class="py-1 text-start d-flex justify-content-center no_pointer no_hover ">
                     <span class="hiddenable no_wrap group_sidebar_title">فروشگاه</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_product_category">
                     <i class="ms-3 icon fas fa-stream text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت گروه محصول</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_product_section">
                     <i class="ms-3 icon fas fa-cube text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت محصول</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_brand_section">
                     <i class="ms-3 icon fas fa-copyright text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت برند ها</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_guarantee_section">
                     <i class="ms-3 icon fab fa-pagelines text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت گارانتی ها</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_color_section">
                     <i class="ms-3 icon fas fa-palette text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت رنگ ها</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_discount_section">
                     <i class="ms-3 icon fas fa-percentage text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت تخفیف ها</span>
                 </li>
@@ -101,11 +101,11 @@
                 <li class="py-1 text-start d-flex justify-content-center no_pointer no_hover ">
                     <span class="hiddenable no_wrap group_sidebar_title">سفارشات و سبد</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_cart_section">
                     <i class="ms-3 icon fas fa-shopping-basket text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت سبد ها</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_orders_section">
                     <i class="ms-3 icon fas fa-luggage-cart text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت سفارشات</span>
                 </li>
@@ -113,15 +113,15 @@
                 <li class="py-1 text-start d-flex justify-content-center no_pointer no_hover ">
                     <span class="hiddenable no_wrap group_sidebar_title ">کاربران و همکاران</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_user_section">
                     <i class="ms-3 icon fas fa-users text-light"></i>
                     <span class="hiddenable no_wrap font_08">مشاهده کاربران</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_role_section">
                     <i class="ms-3 icon fas fa-user-tag text-light"></i>
                     <span class="hiddenable no_wrap font_08">نقش ها</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_permission_section">
                     <i class="ms-3 icon fas fa-shield-alt text-light"></i>
                     <span class="hiddenable no_wrap font_08">مجوز ها</span>
                 </li>
@@ -129,11 +129,11 @@
                 <li class="py-1 text-start d-flex justify-content-center no_pointer no_hover ">
                     <span class="hiddenable no_wrap group_sidebar_title ">ارتباطات</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_question_section">
                     <i class="ms-3 icon fas fa-question-circle text-light"></i>
                     <span class="hiddenable no_wrap font_08">سوال ها</span>
                 </li>
-                <li class="py-1 text-start pe-4">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_comments_section">
                     <i class="ms-3 icon fas fa-comment text-light"></i>
                     <span class="hiddenable no_wrap font_08">نظرات</span>
                 </li>
@@ -155,8 +155,76 @@
 
     <section id="content_section" class="bg-light py-2 px-3">
 
+        <!-- #region(collapsed) dashboard section start -->
+        <div id="dashboard_section" class="dashboard_section main_section">
+            <div class="row">
+
+                <div class="col-12 col-md-6 col-lg-3 dashboard_card_parent">
+                    <div class="card text-dark bg-info mb-3 dashboard_card" >
+                        <div class="card-body row">
+                          <div class="col-8">
+                            <h4>7</h4>
+                            <h6 class="card-title">سبد خرید امروز</h6>
+                            <Small class="card-title">سبد های خرید مانده امروز</Small>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-shopping-basket card_icon"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 dashboard_card_parent">
+                    <div class="card text-dark bg-info mb-3 dashboard_card" >
+                        <div class="card-body row">
+                          <div class="col-8">
+                            <h4>5</h4>
+                            <h6 class="card-title">سفارشات مانده امروز</h6>
+                            <Small class="card-title">سفارشات معلق و فاقد پرداختی </Small>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-dolly card_icon"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 dashboard_card_parent">
+                    <div class="card text-dark bg-info mb-3 dashboard_card" >
+                        <div class="card-body row">
+                          <div class="col-8">
+                            <h4>45</h4>
+                            <h6 class="card-title">سفارشات امروز</h6>
+                            <Small class="card-title">سفارشات کامل و دارای پرداختی</Small>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-luggage-cart card_icon"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3 dashboard_card_parent">
+                    <div class="card text-dark bg-info mb-3 dashboard_card" >
+                        <div class="card-body row">
+                          <div class="col-8">
+                            <h4>1,500,000</h4>
+                            <h6 class="card-title">درآمد امروز</h6>
+                            <Small class="card-title">جمع مبالغ پرداختی (تومان)</Small>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-money-check-alt card_icon"></i>
+                          </div>
+                        </div>
+                    </div>
+                </div>  
+
+            </div>
+        </div>
+        <!-- #endregion content -->
+        
         <!-- #region(collapsed) add product category section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_product_category" class="manage_product_category main_section d-none">
             <h4 class="text-center my-3">مدیریت دسته بندی محصولات</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -248,7 +316,7 @@
         <!-- #endregion content -->
 
         <!-- #region(collapsed) add product section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_product_section" class="manage_product_section main_section d-none">
             <h4 class="text-center my-3">مدیریت محصولات</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -318,7 +386,7 @@
         <!-- #endregion content -->
     
         <!-- #region(collapsed) add color section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_color_section" class="add_color_section main_section d-none">
             <h4 class="text-center my-3">مدیریت رنگ ها</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -390,7 +458,7 @@
         <!-- #endregion content -->
         
         <!-- #region(collapsed) add guarantee section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_guarantee_section" class="manage_guarantee_section main_section d-none">
             <h4 class="text-center my-3">مدیریت گارانتی ها</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -449,7 +517,7 @@
         <!-- #endregion content -->
         
         <!-- #region(collapsed) add brand section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_brand_section" class="manage_brand_section main_section d-none">
             <h4 class="text-center my-3">مدیریت برند ها</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -513,7 +581,7 @@
         <!-- #endregion content -->
         
         <!-- #region(collapsed) add discount code section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_discount_section" class="manage_discount_section main_section d-none">
             <h4 class="text-center my-3">مدیریت کد های تخفیف</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -577,7 +645,7 @@
         <!-- #endregion content -->
 
         <!-- #region(collapsed) cart section start  -->
-        <div class="cart_section d-none">
+        <div id="manage_cart_section" class="manage_cart_section main_section d-none">
             <h4 class="text-center my-3">مدیریت سبد خرید</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -640,7 +708,7 @@
         <!-- #endregion -->
     
         <!-- #region(collapsed) order section start  -->
-        <div class="orders_section d-none">
+        <div id="manage_orders_section" class="manage_orders_section main_section d-none">
             <h4 class="text-center my-3">مدیریت سفارشات</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -698,7 +766,7 @@
         <!-- #endregion -->
     
         <!-- #region(collapsed) add user section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_user_section" class="manage_user_section main_section d-none">
             <h4 class="text-center my-3">مدیریت کاربران</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -762,7 +830,7 @@
         <!-- #endregion content -->
 
         <!-- #region(collapsed) add role section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_role_section" class="manage_role_section main_section d-none">
             <h4 class="text-center my-3">مدیریت نقش ها</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -827,7 +895,7 @@
         <!-- #endregion content -->
 
         <!-- #region(collapsed) add permissions section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_permission_section" class="manage_permission_section main_section d-none">
             <h4 class="text-center my-3">مدیریت مجوز ها</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
@@ -882,7 +950,7 @@
         <!-- #endregion content -->
     
         <!-- #region(collapsed) manage comments section start -->
-        <div class="add_product_category d-none">
+        <div id="manage_comments_section" class="manage_comments_section main_section d-none">
         <h4 class="text-center my-3">مدیریت نظرات</h4>
         <div class="row justify-content-between">
             <div class="col-10 col-md-6 col-lg-4">
@@ -952,7 +1020,7 @@
     <!-- #endregion content -->
 
         <!-- #region(collapsed) manage questions section start -->
-        <div class="add_product_category">
+        <div id="manage_question_section" class="manage_question_section main_section d-none">
         <h4 class="text-center my-3">مدیریت سوالات</h4>
         <div class="row justify-content-between">
             <div class="col-10 col-md-6 col-lg-4">
