@@ -250,7 +250,7 @@ td , th {
 }
 
 #sidebar_section .mini_sidebar .avatar_box{
-    width: 65px;
+    width: 55px;
 }
 
 #sidebar_section .mini_sidebar .avatar_box img{
@@ -308,6 +308,11 @@ td , th {
     box-shadow: 8px 8px 12px 0 rgb(25 42 70 / 13%);
 }
 
+.no_shadow_back_table{
+    background: #ffffff70 !important;
+    box-shadow: unset !important;
+}
+
 
 
 /* dashboard */
@@ -329,7 +334,11 @@ td , th {
     padding: 12px;
     border-radius: 50%;
     display: block;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    width: 50px;
+    height: 50px;
+    line-height: 26px;
+    text-align: center;
 }
 
 .dashboard_card_parent:nth-child(1) .dashboard_card{
