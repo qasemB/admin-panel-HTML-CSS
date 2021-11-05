@@ -84,9 +84,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     };
 
     const ctx = document.getElementById('myChart').getContext('2d');
-    setTimeout(function(){
-        const myChart = new Chart(ctx , config)
-    } , 1000)
+    new Chart(ctx , config)
 
 
 
